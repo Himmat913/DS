@@ -1,0 +1,10 @@
+*.exe
+*.out
+*.obj
+*.class
+*.o
+
+*.log
+*.tmp
+
+.vscode/
