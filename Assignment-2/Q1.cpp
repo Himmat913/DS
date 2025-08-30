@@ -27,6 +27,7 @@ void pop() {
 
 void isEmpty() {
 	if(top==-1) {
+		cout<<"Stack is empty.\n";
 	} else {
 		cout<<"Stack is not empty.\n";
 	}
