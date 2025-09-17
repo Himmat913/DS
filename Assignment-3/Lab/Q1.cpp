@@ -1,7 +1,7 @@
 #include <iostream> 
 using namespace std;
 
-#define n 5
+const int n = 5;
 int stackk[n];
 int top = -1;
 
