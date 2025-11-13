@@ -62,10 +62,12 @@ int main() {
     l.insert(30);
     l.insert(40);
 
-    if(l.isCircular())
+    if(l.isCircular()) {
         cout<<"The list is circular.";
-    else
+    }    
+    else {
         cout<<"The list is not circular.";
+    }
 
     return 0;
 }
