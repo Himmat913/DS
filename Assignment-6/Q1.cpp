@@ -61,20 +61,30 @@ class CircularLinkedList {
         }while(temp != tail->next);
     }
 
-    void insert_before(int key, int val) {
+   void insert_before(int key, int val) {
+        if (tail == NULL) return;
+
         Node* temp = tail->next;
         Node* prev = tail;
+
         do {
-            if(temp->data == key) {
+            if (temp->data == key) {
                 Node* newNode = new Node(val);
                 newNode->next = temp;
                 prev->next = newNode;
-                if(temp == tail->next) {
-                    tail->next = newNode;
+
+                if (temp == tail->next) {
+                    tail->next = newNode; 
                 }
+                return; 
             }
-        }while(temp != tail->next);
-    }
+
+            prev = temp;
+            temp = temp->next;
+
+        } while (temp != tail->next);
+}
+
 
     void deleteNode(int key) {
         if (tail == nullptr) {
